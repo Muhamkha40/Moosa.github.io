@@ -1,0 +1,48 @@
+/* Basic layout */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 14px 24px;
+}
+.site-header .logo { display:flex; align-items:center; gap:12px; }
+.site-header img { width:48px; height:auto; }
+.main-nav a { color: #fff; margin-left:16px; text-decoration:none; }
+
+/* Hero */
+.hero { position: relative; }
+.hero img { width:100%; height:auto; filter: brightness(60%); display:block; }
+.hero-text {
+  position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+  text-align:center; color:white;
+}
+.cta {
+  display:inline-block; margin-top:12px; padding:10px 18px; border-radius:6px;
+  text-decoration:none; background:#003366; color:white; font-weight:600;
+}
+
+/* Model cards */
+.popular-models { padding:40px 20px; background:#f6f6f6; text-align:center; }
+.model-cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+.card { width:250px; background:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.12); overflow:hidden; }
+.card img { width:100%; display:block; }
+.card h3 { margin:12px; font-family:'Crimson Text', serif; }
+
+/* Footer */
+.site-footer { background:#111; color:#fff; text-align:center; padding:18px; margin-top:30px; }
+
+/* Model page */
+.model-page { padding:32px; display:flex; justify-content:center; }
+.model-detail { max-width:800px; text-align:center; }
+.color-selector button { margin:8px; padding:8px 12px; cursor:pointer; }
